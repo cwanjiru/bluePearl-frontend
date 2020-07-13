@@ -120,5 +120,15 @@
         }
       }
     }},
-  "defaultProject": "bluepearl"
+  "defaultProject": "bluepearl",
+  "schematics":{
+   "@schmatics/angular:component":{
+     "prefix": "bpl",
+     "styleext" : "css"
+   },
+   "@schematics/angular:directive":{
+     "prefix" : "bpl"
+   }
+
+  }
 }
