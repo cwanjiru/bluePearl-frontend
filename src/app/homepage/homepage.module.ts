@@ -4,11 +4,12 @@ import { HomepageComponent } from './homepage.component';
 import { DealsComponent } from './deals/deals.component';
 import { CoreModule } from '../core/core.module';
 import { ModalSearchComponent } from './modal-search/modal-search.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 
 @NgModule({
-  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent],
+  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent, ShoppingCartComponent],
   imports: [
     CommonModule,
     CoreModule,
