@@ -10,11 +10,12 @@ import { ShopByCategoryComponent } from './shop-by-category/shop-by-category.com
 import { ShopByCategorySamplesComponent } from './shop-by-category-samples/shop-by-category-samples.component';
 import { ShopByCategoryDisplayProductsComponent } from './shop-by-category-display-products/shop-by-category-display-products.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
+import { NewArrivalModalComponent } from './new-arrival-modal/new-arrival-modal.component';
 
 
 
 @NgModule({
-  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent, ShoppingCartComponent, SliderComponent, ShopByCategoryComponent, ShopByCategorySamplesComponent, ShopByCategoryDisplayProductsComponent, NewArrivalsComponent],
+  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent, ShoppingCartComponent, SliderComponent, ShopByCategoryComponent, ShopByCategorySamplesComponent, ShopByCategoryDisplayProductsComponent, NewArrivalsComponent, NewArrivalModalComponent],
   imports: [
     CommonModule,
     CoreModule,
