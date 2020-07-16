@@ -11,11 +11,12 @@ import { ShopByCategorySamplesComponent } from './shop-by-category-samples/shop-
 import { ShopByCategoryDisplayProductsComponent } from './shop-by-category-display-products/shop-by-category-display-products.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
 import { NewArrivalModalComponent } from './new-arrival-modal/new-arrival-modal.component';
+import { NewArrivalSummerDisplayComponent } from './new-arrival-summer-display/new-arrival-summer-display.component';
 
 
 
 @NgModule({
-  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent, ShoppingCartComponent, SliderComponent, ShopByCategoryComponent, ShopByCategorySamplesComponent, ShopByCategoryDisplayProductsComponent, NewArrivalsComponent, NewArrivalModalComponent],
+  declarations: [HomepageComponent, DealsComponent, ModalSearchComponent, ShoppingCartComponent, SliderComponent, ShopByCategoryComponent, ShopByCategorySamplesComponent, ShopByCategoryDisplayProductsComponent, NewArrivalsComponent, NewArrivalModalComponent, NewArrivalSummerDisplayComponent],
   imports: [
     CommonModule,
     CoreModule,
