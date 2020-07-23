@@ -3,7 +3,7 @@ import { CoreModule } from './core.module';
 import { Catalog } from './catalog';
 
 @Injectable({
-  providedIn: CoreModule
+  providedIn: 'root'
 })
 
 export class CatalogService {
@@ -13,31 +13,31 @@ export class CatalogService {
     this.setUpCatalog();
    }
 
-  fetchWomenCatalog = ():Array<Catalog> =>{
-    let womenCatalog = [];
+  fetchWomenFashionAccessories = ():Array<string> =>{
+    let womenCatalog ;
     for(let i=0; i<this.allCatalogs.length;i++){
-      if(this.allCatalogs[i]['property'] == 'women'){
-        womenCatalog.push(this.allCatalogs[i]);
+      if(this.allCatalogs[i].category == 'women'){
+        womenCatalog = this.allCatalogs[i].fashionAccessories;
       }
     }
     return womenCatalog;
   }
 
-  fetchMenCatalog = (): Array<Catalog> =>{
-    let menCatalog = [];
+  fetchMenFashionAccessories = (): Array<string> =>{
+    let menCatalog ;
     for(let i=0; i<this.allCatalogs.length; i++){
-      if(this.allCatalogs[i]['property'] == 'men'){
-        menCatalog.push(this.allCatalogs[i]);
+      if(this.allCatalogs[i].category == 'men'){
+        menCatalog = this.allCatalogs[i].fashionAccessories;
       } 
     }
       return menCatalog;
   }
   
-  fetchKidsCatalog = ():Array<Catalog> =>{
-    let kidsCatalog = [];
+  fetchKidsFashionAccessories = (): Array<string> =>{
+    let kidsCatalog ;
     for(let i=0; i<this.allCatalogs.length; i++){
-      if(this.allCatalogs[i]['property'] == 'kids'){
-        kidsCatalog.push(this.allCatalogs[i]);
+      if(this.allCatalogs[i].category == 'kids'){
+        kidsCatalog = this.allCatalogs[i].fashionAccessories;
       }
     }
     return kidsCatalog;
